@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {              
+        "removeComments": true,
+        "out": "app.js",
+        "target": "ES5",
+        "experimentalDecorators": true,
+        "sourceMap": true
+    },
+    "files": [
+        "bower_components/riot-ts/riot-ts.d.ts",
+        "hello-world.ts"        
+    ]
+}

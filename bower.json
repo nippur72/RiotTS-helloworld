@@ -1,0 +1,21 @@
+{
+  "name": "RiotTS-helloworld",
+  "authors": [
+    "Antonino Porcino <nino.porcino@gmail.com>"
+  ],
+  "description": "Hello world example with RiotTS",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "riot-ts": "~0.0.21"
+  }
+}
