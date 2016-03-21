@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "riot-ts": "~0.0.21"
+    "riot-ts": "^0.0.22"
   }
 }
