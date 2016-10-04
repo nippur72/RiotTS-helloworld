@@ -1,0 +1,7 @@
+{
+  "jspm": {
+    "dependencies": {
+      "riot-typescript": "npm:riot-typescript@^1.0.0"
+    }
+  }
+}

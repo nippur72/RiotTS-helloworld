@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {              
+        "removeComments": true,      
+        "target": "ES5",
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "module": "system"
+    },
+    "files": [        
+        //"jspm_packages/npm/riot-typescript@1.0.0/riot-ts.d.ts",
+        /*"jspm_packages/github/nippur72/RiotTS@modules/riot.d.ts",*/
+        "hello-world.ts"       
+    ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "riot-typescript-helloworld-npm-global",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "riot-typescript": "^1.0.7"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.0-dev.20161003"
+  },
+  "scripts": {
+    "build": "tsc && webpack hello-world.js --output-filename app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nippur72/RiotTS-helloworld.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nippur72/RiotTS-helloworld/issues"
+  },
+  "homepage": "https://github.com/nippur72/RiotTS-helloworld#readme"
+}

@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "none",
+        "removeComments": true,
+        "out": "app.js",
+        "target": "ES5",
+        "experimentalDecorators": true,
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
