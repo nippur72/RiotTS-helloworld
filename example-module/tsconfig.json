@@ -4,7 +4,9 @@
         "removeComments": true,
         "target": "ES5",
         "experimentalDecorators": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true
     },
     "exclude": [
         "node_modules"

@@ -5,7 +5,9 @@
         "out": "app.js",
         "target": "ES5",
         "experimentalDecorators": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "strictNullChecks": false,
+        "noImplicitAny": true
     },
     "exclude": [
         "node_modules"

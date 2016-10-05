@@ -13,7 +13,7 @@ class HelloWorldTag extends Riot.Element
 	greet = "Hello";
 	who = "World";
 
-	constructor(opts)
+	constructor(opts: any)
 	{
 		super();
 		if(opts.who)
@@ -34,4 +34,4 @@ function main()
 	riot.mount("*");
 }
 
-window["main"] = main;
+(window as any)["main"] = main;

@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "riot-typescript": "^1.0.7"
+    "riot-typescript": "^1.0.10"
   },
   "devDependencies": {
     "typescript": "^2.1.0-dev.20161003"
