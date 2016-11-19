@@ -58,6 +58,7 @@
 	};
 	var riot = __webpack_require__(1);
 	var Riot = __webpack_require__(3);
+	__webpack_require__(4);
 	var HelloWorldTag = (function (_super) {
 	    __extends(HelloWorldTag, _super);
 	    function HelloWorldTag(opts) {
@@ -76,7 +77,7 @@
 	    return HelloWorldTag;
 	}(Riot.Element));
 	HelloWorldTag = __decorate([
-	    Riot.template("\n<hello-world>\n\t<div>{greet}, {who}!</div>\n\t<button onclick={changeGreeting}>change greet</button>\n</hello-world>\n")
+	    Riot.template("\n<hello-world>\n   <nested></nested>\n\t<div>{greet}, {who}!</div>\n\t<button onclick={changeGreeting}>change greet</button>\n</hello-world>\n")
 	], HelloWorldTag);
 	function main() {
 	    riot.mount("*");
@@ -3754,6 +3755,36 @@
 	}
 	exports.template = template;
 	//# sourceMappingURL=riot-ts.js.map
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var Riot = __webpack_require__(3);
+	var NestedTag = (function (_super) {
+	    __extends(NestedTag, _super);
+	    function NestedTag() {
+	        return _super.apply(this, arguments) || this;
+	    }
+	    return NestedTag;
+	}(Riot.Element));
+	NestedTag = __decorate([
+	    Riot.template("\n<nested>\n\t<div>some nested content</div>\n</nested>\n")
+	], NestedTag);
+	exports.NestedTag = NestedTag;
+	//# sourceMappingURL=nested.js.map
 
 /***/ }
 /******/ ]);

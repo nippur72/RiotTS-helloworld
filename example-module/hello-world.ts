@@ -1,8 +1,11 @@
 import * as riot from "riot/riot+compiler";
 import * as Riot from "riot-typescript";
 
+import "./nested";
+
 @Riot.template(`
 <hello-world>
+   <nested></nested>
 	<div>{greet}, {who}!</div>
 	<button onclick={changeGreeting}>change greet</button>
 </hello-world>

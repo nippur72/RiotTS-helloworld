@@ -10,31 +10,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var riot = require("riot/riot+compiler");
 var Riot = require("riot-typescript");
-require("./nested");
-var HelloWorldTag = (function (_super) {
-    __extends(HelloWorldTag, _super);
-    function HelloWorldTag(opts) {
-        var _this = _super.call(this) || this;
-        _this.greet = "Hello";
-        _this.who = "World";
-        if (opts.who) {
-            _this.who = opts.who;
-        }
-        return _this;
+var NestedTag = (function (_super) {
+    __extends(NestedTag, _super);
+    function NestedTag() {
+        return _super.apply(this, arguments) || this;
     }
-    HelloWorldTag.prototype.changeGreeting = function () {
-        this.greet = "Holà";
-        this.who = "amigo";
-    };
-    return HelloWorldTag;
+    return NestedTag;
 }(Riot.Element));
-HelloWorldTag = __decorate([
-    Riot.template("\n<hello-world>\n   <nested></nested>\n\t<div>{greet}, {who}!</div>\n\t<button onclick={changeGreeting}>change greet</button>\n</hello-world>\n")
-], HelloWorldTag);
-function main() {
-    riot.mount("*");
-}
-window["main"] = main;
-//# sourceMappingURL=hello-world.js.map
+NestedTag = __decorate([
+    Riot.template("\n<nested>\n\t<div>some nested content</div>\n</nested>\n")
+], NestedTag);
+exports.NestedTag = NestedTag;
+//# sourceMappingURL=nested.js.map
